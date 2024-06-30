@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f0f0f0;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .header img {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+        }
+        .header div {
+            display: flex;
+            align-items: center;
+        }
+        .header div a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .header a:last-child {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .welcome-message {
+            position: relative;
+            text-align: center;
+            color: rgb(31, 12, 235);
+            border: 1px solid black;
+            height: 50vh;
+            min-height: 300px;
+        }
+        .welcome-message img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+        }
+        .welcome-message h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+        .content div {
+            background: #f0f0f0;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border: 1px solid black;
+        }
+        .video {
+            text-align: center;
+            padding: 10px;
+            max-width: 100%;
+            border: 1px solid black;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #f0f0f0;
+            border: 1px solid black;
+        }
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div width="70%">
+        <div class="header">
+            <div>
+                <img src="f1.avif" alt="Logo">
+                <a href="#">footy.com</a>
+            </div>
+            <a href="contact.html">CONTACT-7903930763</a>
+        </div>
+        
+        <div class="welcome-message">
+            <img src="f2.jpg" alt="Background Image">
+            <h1>WELCOME TO<br>footy.com</h1>
+        </div>
+        
+        <div class="content">
+            <div>
+                <p>Football is a popular game which keeps players healthy and disciplined. It develops their mind and team spirit and sense of tolerance among them. It is a game played for ninety minutes (in two halves of 45 minutes and 15 minutes break). This game has two teams of eleven players in each. Football, known as soccer in some countries, is a globally beloved sport played by two teams of eleven players each. Originating in England in the mid-19th century, the game has become the world's most popular sport. The objective is to score goals by getting the ball into the opposing team's net using any part of the body except the hands and arms. The sport's premier event, the FIFA World Cup, is held every four years and draws massive global audiences. Legendary players like Pelé, Diego Maradona, and Lionel Messi have left indelible marks on the sport. Football's simplicity and minimal equipment requirements make it accessible to people of all ages and backgrounds. It fosters a sense of community and belonging among fans, who passionately support their favorite teams. The sport is governed by rules known as the Laws of the Game, overseen by the International Football Association Board (IFAB). Whether played in local parks or massive stadiums, football continues to inspire and unite millions around the world.</p>
+            </div>
+            <div>
+                <img src="f3.jpg" alt="Football Image 1">
+            </div>
+            <div>
+                <img src="f4.jpg" alt="Football Image 2">
+            </div>
+            <div>
+                <p>"City-Manchester City/We are the lads who are playing to win/City-the Boys in Blue will never give in/Football is the game that we all live for/Saturday is the day we play the game/Everybody has to pull together/And together we will stand." This one goes on a while longer, but it is worth a look-see. Manchester City Football Club, commonly known as Man City, is one of the most successful and renowned football clubs in the world. Founded in 1880 as St. Mark's (West Gorton),</p>
+            </div>
+        </div>
+        
+        <div class="video">
+            <iframe width="914" height="514" src="https://www.youtube.com/embed/kHc39NnGQIc" title="SPAIN ROAD TO VICTORY 🔴 WORLD CUP 2010" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+        <div class="footer">
+            <p>ALL RIGHTS RESERVED</p>
+        </div>
+    </div>
+</body>
+</html>
